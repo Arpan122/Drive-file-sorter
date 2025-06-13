@@ -30,7 +30,7 @@ def create_service(client_secret_file, api_name, api_version, *scopes):
     except Exception as error:
         print(f"An error occurred: {error}")
         
-def getFilesInFolder(service, folder_id, extraQueries : list = []):
+def getFilesInFolder(service, folder_id, extraQueries : list = []) -> list:
     if (len(extraQueries) > 0):
         query = f"parents = '{folder_id}' and {' and '.join(extraQueries)}"
     else:

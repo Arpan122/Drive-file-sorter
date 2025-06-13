@@ -10,7 +10,7 @@ class Client:
         response = self.client.models.generate_content(
             model=self.model,
             config=types.GenerateContentConfig(
-                temperature=0.1,
+                temperature=0.2,
                 system_instruction="You need to help me sort some files into folders based on their names. Don't say anything like 'Okay, here's what you asked for' or anything like that."
             ),
             contents=[prompt]
