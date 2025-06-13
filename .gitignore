@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+*.json
+
 # C extensions
 *.so
 
@@ -12,7 +14,7 @@ build/
 develop-eggs/
 dist/
 downloads/
-eggs/
+eggs/s
 .eggs/
 lib/
 lib64/
